@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>mapsforsimulatorstage</name>
+  <version>0.1.0</version>
+  <description>Some maps for simulations</description>
+  <maintainer email="marija.seder@gmail.com">Marija Seder</maintainer>
+  <license>BSD</license>
+  <author email="marija.seder@gmail.com">Marija Seder</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+
+</package>
