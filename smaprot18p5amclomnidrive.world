@@ -4,7 +4,7 @@
 
 # the size of a pixel in Stage's underlying raytrace model in meters
 #resolution     0.056668
-resolution 0.001
+resolution 0.01
 
 interval_sim 100  # milliseconds per update step
 #interval_real 100 # real-time milliseconds per update step
@@ -19,20 +19,21 @@ include "sick2.inc"
 #gui_disable 0
 
 #window( size [ 1024.000 691.000 ] center [-8.369 3.704] scale 37.021 )
-window( size [ 569 392 ] center [4.135 3.252] scale 25.306 )
+window( size [ 569.000 392.000 ] center [0.996 3.492] scale 37.050 )
 
 
 floorplan( 
   #bitmap "bitmaps/bbbbb.png"
-#bitmap "bitmaps/corridor.png"
-#bitmap "bitmaps/corridor01.png"
-bitmap "bitmaps/corridor0025.png"
-#map_resolution     0.05 
-  pose [5.775 4.275 0.000 0.000] 
+#bitmap "bitmaps/Smaprot18p5.png"
+bitmap "bitmaps/Smaprot18p50025.png"
+#bitmap "bitmaps/Smaprot18p5005.png"
+#bitmap "bitmaps/Smaprot18p501.png"
+#map_resolution     0.1 
+  pose [2.775 3.880 0 0] 
 #    pose [0 0 0 0]
 #  pose [0 0 0 90]#- iz nekog razloga s fake_localization okrene sve za 90
-  size [11.550 8.550 0.800] 
-  name "Hmap"
+  size [5.550 7.760 0.800] 
+  name "Smap"
 )
 
 
@@ -42,13 +43,17 @@ pioneer2dx
 (
  name "zeleni"
  color "red"
- pose [ 9.34 1.504 0.000  -1.12999737628207]
-# pose [3.125 1.896 0.000 0.000]
+ pose [1.32 2.31 0 157.50]
+# pose [1.551 2.122 0 90.000]
 # pose [ -1 0 0 90 ] #kad koristis fake_localization treba zarotirati
 sicklaser(
-#pose [0.543 -0.301 0.000 -45.000]
+#pose [0.543 -0.301 0 -45.000]
+#pose [0.3 0.1 0 45]
  # ctrl "lasernoise"  # uncomment this line to run a laser noise generator
 )
+# [ xmin xmax ymin ymax zmin zmax amin amax ]				
+velocity_bounds [-2 2 0 0 0 0 -200 200 ]					
+acceleration_bounds [-0.2 0.2 0 0 0 0 -20 20]
 localization_origin [ 0 0 0 0 ]
 )
 
@@ -90,6 +95,6 @@ define box model
   gui_nose 0
 )
 
-box( pose [ -2.538 1.380 0.000 180.000 ] color "green")
+box( pose [ -2.538 1.380 0 180.000 ] color "green")
 
 
