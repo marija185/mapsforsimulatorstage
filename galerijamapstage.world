@@ -24,12 +24,12 @@ window( size [ 569 392 ] center [8.858 3.745] scale 30.620 )
 
 floorplan( 
   #bitmap "bitmaps/bbbbb.png"
-bitmap "bitmaps/galerija.pgm"
+bitmap "bitmaps/galerija2.pgm"
 map_resolution     0.068 
-  pose [ 11.458 4.318 0.000 0.000] 
+  pose [ 11.152 7.99 0.000 0.000] 
 #    pose [0 0 0 0]
 #  pose [0 0 0 90]#- iz nekog razloga s fake_localization okrene sve za 90
-  size [22.916  8.636 0.800] 
+  size [22.304  15.98 0.800] 
   name "Hmap"
 )
 
