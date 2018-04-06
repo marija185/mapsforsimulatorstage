@@ -24,12 +24,15 @@ window( size [ 569 392 ] center [8.858 3.745] scale 30.620 )
 
 floorplan( 
   #bitmap "bitmaps/bbbbb.png"
-bitmap "bitmaps/galerija2.pgm"
+#bitmap "bitmaps/galerija2.pgm"
+bitmap "bitmaps/galerijana2.png"
 map_resolution     0.068 
-  pose [ 11.152 7.99 0.000 0.000] 
+#  pose [ 11.152 7.99 0.000 0.000] 
+  pose [ 11.696 5.236 0.000 0.000] 
 #    pose [0 0 0 0]
 #  pose [0 0 0 90]#- iz nekog razloga s fake_localization okrene sve za 90
-  size [22.304  15.98 0.800] 
+#  size [22.304  15.98 0.800] 
+  size [23.392  10.472 0.800] 
   name "Hmap"
 )
 
@@ -40,7 +43,7 @@ pioneer2dx
 (
  name "zeleni"
  color "red"
-  pose [16.548 5.282 0.000 0.000] 
+  pose [16.932 4.422 0.000 13.716] 
 # pose [ -1 0 0 90 ] #kad koristis fake_localization treba zarotirati
 sicklaser(
 #pose [0.543 -0.301 0.000 -45.000]
